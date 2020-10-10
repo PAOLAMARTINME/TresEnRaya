@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("img/3156605.jpg");
+  font-family: "Orbitron", sans-serif;
+}
+h1 {
+  color: aqua;
+  height: 150px;
+  font-size: 4rem;
+}
+#refresh {
+  width: 5%;
+  height: 5%;
+  margin-top: 25px;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.play-area {
+  display: grid;
+  width: 350px;
+  height: 350px;
+  grid-template-columns: auto auto auto;
+}
+.block {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  border: 3px solid white;
+}
+.occupied:hover {
+  background: #d86fd3;
+}
+.win {
+  background: #8c6cc7;
+}
+.win:hover {
+  background: #a3e4d7;
+}
+#block_0,
+#block_1,
+#block_2 {
+  border-top: none;
+}
+#block_0,
+#block_3,
+#block_6 {
+  border-left: none;
+}
+#block_6,
+#block_7,
+#block_8 {
+  border-bottom: none;
+}
+#block_2,
+#block_5,
+#block_8 {
+  border-right: none;
+}
+.playerWin {
+  color: rgb(115, 228, 81);
+  margin-top: 50px;
+}
+.computerWin {
+  color: #c41cad;
+  margin-top: 50px;
+}
+.draw {
+  color: rgb(255, 0, 0);
+  margin-top: 50px;
+}
